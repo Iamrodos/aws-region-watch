@@ -21,5 +21,13 @@ state/
 .vscode/
 *.swp
 
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
+
+# Pytest
+.pytest_cache/
+
 # Claude
 .claude/
