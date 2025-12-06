@@ -393,10 +393,10 @@ def save_region_state(state: dict, state_dir: Path, region: str) -> None:
     state_file = get_state_file(state_dir, region)
     tmp_file = state_file.with_suffix(".json.tmp")
 
-    # Write to temp file, then atomic rename
+    # Write to temp file, then atomic replace
     try:
         tmp_file.write_text(json.dumps(state, indent=2, sort_keys=True))
-        tmp_file.rename(state_file)
+        tmp_file.replace(state_file)  # replace() works cross-platform, rename() fails on Windows
     except Exception:
         # Clean up temp file on failure
         if tmp_file.exists():
@@ -417,10 +417,10 @@ def save_global_state(state: dict, state_dir: Path) -> None:
     state_file = get_global_state_file(state_dir)
     tmp_file = state_file.with_suffix(".json.tmp")
 
-    # Write to temp file, then atomic rename
+    # Write to temp file, then atomic replace
     try:
         tmp_file.write_text(json.dumps(state, indent=2, sort_keys=True))
-        tmp_file.rename(state_file)
+        tmp_file.replace(state_file)  # replace() works cross-platform, rename() fails on Windows
     except Exception:
         # Clean up temp file on failure
         if tmp_file.exists():
