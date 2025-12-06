@@ -1,0 +1,122 @@
+name: AWS Region Watch
+
+on:
+  schedule:
+    # Run daily at 5:30am AEST (7:30pm UTC previous day)
+    - cron: '30 19 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+concurrency:
+  group: aws-region-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+
+      - name: Checkout state branch
+        uses: actions/checkout@v4
+        with:
+          ref: state
+          path: state-branch
+        continue-on-error: true  # First run won't have state branch
+
+      - name: Setup state directory
+        run: |
+          mkdir -p state
+          if [ -d "state-branch" ]; then
+            cp -r state-branch/*.json state/ 2>/dev/null || true
+          fi
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+
+      - name: Run AWS Region Watch
+        id: watch
+        run: |
+          set +e
+          uv run aws-region-watch \
+            --region ap-southeast-2 \
+            --region ap-southeast-4 \
+            --region ap-southeast-6 \
+            --type region,product,api \
+            --state-dir state \
+            > report.md
+          EXIT_CODE=$?
+          echo "exit_code=${EXIT_CODE}" >> $GITHUB_OUTPUT
+          exit 0
+
+      - name: Validate report
+        if: steps.watch.outputs.exit_code == '1'
+        run: |
+          if [ ! -f report.md ] || [ ! -s report.md ]; then
+            echo "::error::Report file missing or empty"
+            exit 1
+          fi
+
+      - name: Create issue if changes detected
+        if: steps.watch.outputs.exit_code == '1'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "AWS Region Changes - ${{ github.run_id }}"
+          content-filepath: report.md
+          labels: aws-changes
+
+      - name: Update state branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd state
+
+          # Configure git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Setup credentials securely
+          git config --global credential.helper store
+          echo "https://x-access-token:${GH_TOKEN}@github.com" > ~/.git-credentials
+
+          # Initialize and fetch existing state
+          git init
+          git remote add origin https://github.com/${{ github.repository }}.git
+          git fetch origin state 2>/dev/null || echo "No existing state branch"
+          git checkout state 2>/dev/null || git checkout -b state
+
+          # Commit and push if changes
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to state"
+          else
+            git commit -m "Update state - $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin state
+          fi
+
+          # Cleanup credentials
+          rm -f ~/.git-credentials
+
+      - name: Generate summary
+        if: always()
+        run: |
+          echo "## AWS Region Watch" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| | |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          echo "| **Regions** | ap-southeast-2, ap-southeast-4, ap-southeast-6 |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Exit Code** | ${{ steps.watch.outputs.exit_code }} |" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.watch.outputs.exit_code }}" == "1" ]; then
+            echo "| **Changes** | Yes |" >> $GITHUB_STEP_SUMMARY
+          elif [ "${{ steps.watch.outputs.exit_code }}" == "0" ]; then
+            echo "| **Changes** | None |" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| **Changes** | Error |" >> $GITHUB_STEP_SUMMARY
+          fi
