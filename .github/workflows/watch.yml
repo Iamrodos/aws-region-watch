@@ -49,6 +49,7 @@ jobs:
             --region ap-southeast-2 \
             --region ap-southeast-4 \
             --region ap-southeast-6 \
+            --region us-east-2 \
             --type region,product,api \
             --state-dir state \
             > report.md
@@ -127,7 +128,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| | |" >> $GITHUB_STEP_SUMMARY
           echo "|---|---|" >> $GITHUB_STEP_SUMMARY
-          echo "| **Regions** | ap-southeast-2, ap-southeast-4, ap-southeast-6 |" >> $GITHUB_STEP_SUMMARY
+          echo "| **Regions** | ap-southeast-2, ap-southeast-4, ap-southeast-6, us-east-2 |" >> $GITHUB_STEP_SUMMARY
           echo "| **Exit Code** | ${{ steps.watch.outputs.exit_code }} |" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.watch.outputs.exit_code }}" == "1" ]; then
             echo "| **Changes** | Yes |" >> $GITHUB_STEP_SUMMARY
