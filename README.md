@@ -8,10 +8,10 @@ Monitor AWS service and feature availability in your regions. Get notified when 
 
 ```bash
 # Install from GitHub and run
-uvx --from git+https://github.com/rodos/aws-region-watch aws-region-watch
+uvx --from git+https://github.com/Iamrodos/aws-region-watch aws-region-watch
 
 # Or install globally
-uv tool install git+https://github.com/rodos/aws-region-watch
+uv tool install git+https://github.com/Iamrodos/aws-region-watch
 aws-region-watch
 ```
 
@@ -19,7 +19,7 @@ aws-region-watch
 
 ```bash
 # Install from GitHub
-pip install git+https://github.com/rodos/aws-region-watch
+pip install git+https://github.com/Iamrodos/aws-region-watch
 
 # Run
 aws-region-watch
@@ -120,7 +120,7 @@ Individual SDK API operations available in Asia Pacific (Sydney). Grouped by ser
 
 ---
 
-*Generated 2024-12-06 09:15:32 by [AWS Region Watch](https://github.com/rodos/aws-region-watch)*
+*Generated 2024-12-06 09:15:32 by [AWS Region Watch](https://github.com/Iamrodos/aws-region-watch)*
 
 *Data source: [https://knowledge-mcp.global.api.aws](https://knowledge-mcp.global.api.aws)*
 ```

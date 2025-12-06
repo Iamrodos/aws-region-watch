@@ -660,7 +660,7 @@ def format_markdown_report(
         # No changes to report - return empty string
         return ""
 
-    lines.append(f"*Generated {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by [AWS Region Watch](https://github.com/rodos/aws-region-watch)*")
+    lines.append(f"*Generated {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by [AWS Region Watch](https://github.com/Iamrodos/aws-region-watch) v{__version__}*")
     lines.append("")
     lines.append(f"*Data source: [{MCP_API_URL}]({MCP_API_URL})*")
 
