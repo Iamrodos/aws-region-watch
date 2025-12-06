@@ -74,7 +74,7 @@ jobs:
         if: steps.watch.outputs.exit_code == '1'
         uses: peter-evans/create-issue-from-file@v6
         with:
-          title: "AWS Region Changes - ${{ github.run_id }}"
+          title: "AWS Region Changes - $(date -u +%Y-%m-%d)"
           content-filepath: report.md
           labels: aws-changes
 
