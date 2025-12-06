@@ -130,14 +130,14 @@ class TestCallMcpToolRetry:
     @patch("aws_region_watch.time.sleep")
     def test_raises_after_max_retries(self, mock_sleep, httpx_mock):
         """Raises APIError after exhausting retries."""
-        httpx_mock.add_response(status_code=503)
-        httpx_mock.add_response(status_code=503)
-        httpx_mock.add_response(status_code=503)
+        # MAX_RETRIES is 6 (from RETRY_BACKOFF_SECONDS = [1, 2, 4, 8, 16, 30])
+        for _ in range(6):
+            httpx_mock.add_response(status_code=503)
 
-        with pytest.raises(APIError, match="after 3 attempts"):
+        with pytest.raises(APIError, match="after 6 attempts"):
             call_mcp_tool("aws___list_regions", {})
 
-        assert len(httpx_mock.get_requests()) == 3
+        assert len(httpx_mock.get_requests()) == 6
 
     @patch("aws_region_watch.time.sleep")
     def test_uses_retry_after_header(self, mock_sleep, httpx_mock):
