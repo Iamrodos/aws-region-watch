@@ -92,7 +92,7 @@ jobs:
           echo "https://x-access-token:${GH_TOKEN}@github.com" > ~/.git-credentials
 
           # Initialize repo with current files
-          git init
+          git init -b state
           git remote add origin https://github.com/${{ github.repository }}.git
           git add -A
 
