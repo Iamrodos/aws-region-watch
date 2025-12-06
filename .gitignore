@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+
+# uv
+.python-version
+
+# Project state
+state/
+*.json.tmp
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Claude
+.claude/
