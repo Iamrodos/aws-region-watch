@@ -38,8 +38,8 @@ EXIT_CHANGES = 1
 EXIT_ERROR = 2
 
 # Retry configuration
-MAX_RETRIES = 3
-RETRY_BACKOFF_SECONDS = [1, 2, 4]  # Exponential backoff
+RETRY_BACKOFF_SECONDS = [1, 2, 4, 8, 16, 30]  # Exponential backoff
+MAX_RETRIES = len(RETRY_BACKOFF_SECONDS)
 
 # Friendly status names
 STATUS_LABELS = {
