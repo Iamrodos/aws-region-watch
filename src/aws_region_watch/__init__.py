@@ -256,7 +256,19 @@ def fetch_all_regions() -> dict[str, str]:
     Returns dict of {region_id: region_long_name}
     """
     data = call_mcp_tool("aws___list_regions", {})
-    regions = data.get("content", {}).get("result", [])
+
+    # Validate expected response structure
+    if "content" not in data:
+        raise APIError(f"Unexpected API response: missing 'content' key. Got: {list(data.keys())}")
+    content = data["content"]
+    if "result" not in content:
+        raise APIError(f"Unexpected API response: missing 'content.result' key. Got: {list(content.keys())}")
+    regions = content["result"]
+    if not isinstance(regions, list):
+        raise APIError(f"Unexpected API response: 'content.result' is not a list. Got: {type(regions).__name__}")
+    if regions and ("region_id" not in regions[0] or "region_long_name" not in regions[0]):
+        raise APIError(f"Unexpected API response: region missing required fields. Got: {list(regions[0].keys())}")
+
     return {r["region_id"]: r["region_long_name"] for r in regions}
 
 
@@ -288,9 +300,20 @@ def fetch_region_resources(region: str, resource_type: str) -> dict[str, str]:
 
         data = call_mcp_tool("aws___get_regional_availability", args)
 
-        # Extract resources from response
-        result = data.get("content", {}).get("result", {})
-        page_resources = result.get(result_key, {})
+        # Validate expected response structure
+        if "content" not in data:
+            raise APIError(f"Unexpected API response: missing 'content' key. Got: {list(data.keys())}")
+        content = data["content"]
+        if "result" not in content:
+            raise APIError(f"Unexpected API response: missing 'content.result' key. Got: {list(content.keys())}")
+        result = content["result"]
+        if not isinstance(result, dict):
+            raise APIError(f"Unexpected API response: 'content.result' is not a dict. Got: {type(result).__name__}")
+        if result_key not in result:
+            raise APIError(f"Unexpected API response: missing '{result_key}' key. Got: {list(result.keys())}")
+        page_resources = result[result_key]
+        if not isinstance(page_resources, dict):
+            raise APIError(f"Unexpected API response: '{result_key}' is not a dict. Got: {type(page_resources).__name__}")
         for name, status in page_resources.items():
             resources[name] = status
 
@@ -893,10 +916,17 @@ def main():
                         current = fetch_region_resources(region, resource_type)
                         log.progress(f"    Found {len(current)} {type_label}")
 
-                        # Count by status
-                        available = sum(1 for s in current.values() if s == "isAvailableIn")
-                        planned = sum(1 for s in current.values() if s in ("isPlannedIn", "isBeingPlannedIn"))
-                        log.progress(f"    Available: {available}, Planned: {planned}")
+                        # Count by status (handles all statuses, including unknown ones)
+                        status_counts: dict[str, int] = {}
+                        for status in current.values():
+                            status_counts[status] = status_counts.get(status, 0) + 1
+
+                        # Format counts using friendly names
+                        count_parts = []
+                        for status, count in sorted(status_counts.items()):
+                            friendly = STATUS_LABELS.get(status, status)
+                            count_parts.append(f"{friendly}: {count}")
+                        log.progress(f"    {', '.join(count_parts) if count_parts else 'No resources'}")
 
                         # Get previous state for this type
                         previous = state.get(resource_type, {})

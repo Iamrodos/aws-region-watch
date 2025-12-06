@@ -243,3 +243,75 @@ class TestFetchRegionResources:
         result = fetch_region_resources("us-east-1", "api")
 
         assert result == {"S3+PutObject": "isAvailableIn"}
+
+
+class TestAPIResponseValidation:
+    """Tests for API response structure validation.
+
+    These tests verify that unexpected API response structures fail fast
+    with clear error messages, rather than silently returning empty data.
+    """
+
+    def test_fetch_regions_missing_content_key(self, httpx_mock):
+        """Raises APIError if 'content' key is missing from response."""
+        response = {"result": []}  # Missing 'content' wrapper
+        httpx_mock.add_response(json=create_mcp_response(response))
+
+        with pytest.raises(APIError, match="missing 'content' key"):
+            fetch_all_regions()
+
+    def test_fetch_regions_missing_result_key(self, httpx_mock):
+        """Raises APIError if 'result' key is missing from content."""
+        response = {"content": {"data": []}}  # 'result' renamed to 'data'
+        httpx_mock.add_response(json=create_mcp_response(response))
+
+        with pytest.raises(APIError, match="missing 'content.result' key"):
+            fetch_all_regions()
+
+    def test_fetch_regions_result_not_a_list(self, httpx_mock):
+        """Raises APIError if 'result' is not a list."""
+        response = {"content": {"result": {"regions": []}}}  # result is dict, not list
+        httpx_mock.add_response(json=create_mcp_response(response))
+
+        with pytest.raises(APIError, match="is not a list"):
+            fetch_all_regions()
+
+    def test_fetch_regions_missing_region_fields(self, httpx_mock):
+        """Raises APIError if region objects are missing required fields."""
+        response = {"content": {"result": [{"id": "us-east-1", "name": "US East"}]}}  # Wrong field names
+        httpx_mock.add_response(json=create_mcp_response(response))
+
+        with pytest.raises(APIError, match="missing required fields"):
+            fetch_all_regions()
+
+    def test_fetch_resources_missing_content_key(self, httpx_mock):
+        """Raises APIError if 'content' key is missing from resource response."""
+        response = {"result": {"products": {}}}  # Missing 'content' wrapper
+        httpx_mock.add_response(json=create_mcp_response(response))
+
+        with pytest.raises(APIError, match="missing 'content' key"):
+            fetch_region_resources("us-east-1", "product")
+
+    def test_fetch_resources_missing_result_key(self, httpx_mock):
+        """Raises APIError if 'result' key is missing from content."""
+        response = {"content": {"data": {"products": {}}}}  # 'result' renamed to 'data'
+        httpx_mock.add_response(json=create_mcp_response(response))
+
+        with pytest.raises(APIError, match="missing 'content.result' key"):
+            fetch_region_resources("us-east-1", "product")
+
+    def test_fetch_resources_missing_products_key(self, httpx_mock):
+        """Raises APIError if expected resource key is missing."""
+        response = {"content": {"result": {"services": {}}}}  # 'products' renamed to 'services'
+        httpx_mock.add_response(json=create_mcp_response(response))
+
+        with pytest.raises(APIError, match="missing 'products' key"):
+            fetch_region_resources("us-east-1", "product")
+
+    def test_fetch_resources_products_not_a_dict(self, httpx_mock):
+        """Raises APIError if products is not a dict."""
+        response = {"content": {"result": {"products": []}}}  # products is list, not dict
+        httpx_mock.add_response(json=create_mcp_response(response))
+
+        with pytest.raises(APIError, match="is not a dict"):
+            fetch_region_resources("us-east-1", "product")
