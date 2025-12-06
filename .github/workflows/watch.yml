@@ -94,8 +94,15 @@ jobs:
           # Initialize and fetch existing state
           git init
           git remote add origin https://github.com/${{ github.repository }}.git
-          git fetch origin state 2>/dev/null || echo "No existing state branch"
-          git checkout state 2>/dev/null || git checkout -b state
+
+          # Try to fetch and checkout existing state branch, or create new orphan branch
+          if git fetch origin state 2>/dev/null; then
+            echo "Found existing state branch"
+            git checkout -b state origin/state
+          else
+            echo "No existing state branch - creating new orphan branch"
+            git checkout --orphan state
+          fi
 
           # Commit and push if changes
           git add -A

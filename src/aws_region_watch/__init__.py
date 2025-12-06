@@ -886,15 +886,20 @@ def main():
                     region_first_run = False
                     if has_changes(region_changes):
                         any_changes = True
+                        # Only save state when there are changes
+                        global_state["region"] = current_regions
+                        save_global_state(global_state, args.state_dir)
+                        log.progress(f"  Global state saved to {get_global_state_file(args.state_dir)}")
+                    else:
+                        log.progress("  No changes detected")
                 else:
                     log.progress("  First run - establishing baseline")
                     region_changes = {"added": [], "removed": [], "changed": []}
                     region_first_run = True
-
-                # Save global state
-                global_state["region"] = current_regions
-                save_global_state(global_state, args.state_dir)
-                log.progress(f"  Global state saved to {get_global_state_file(args.state_dir)}")
+                    # Save state on first run to establish baseline
+                    global_state["region"] = current_regions
+                    save_global_state(global_state, args.state_dir)
+                    log.progress(f"  Global state saved to {get_global_state_file(args.state_dir)}")
 
             # Per-region resource types (product, api)
             per_region_types = [t for t in args.type if t != "region"]
@@ -907,6 +912,7 @@ def main():
 
                     # Load previous state for this region
                     state = load_region_state(args.state_dir, region)
+                    region_state_changed = False
 
                     for resource_type in per_region_types:
                         type_label = type_labels.get(resource_type, resource_type)
@@ -938,17 +944,21 @@ def main():
                             is_first_run[region][resource_type] = False
                             if has_changes(changes):
                                 any_changes = True
+                                region_state_changed = True
+                                state[resource_type] = current
                         else:
                             log.progress(f"    First run - establishing baseline")
                             results[region][resource_type] = {"added": [], "removed": [], "changed": []}
                             is_first_run[region][resource_type] = True
+                            region_state_changed = True
+                            state[resource_type] = current
 
-                        # Update state
-                        state[resource_type] = current
-
-                    # Save state for this region
-                    save_region_state(state, args.state_dir, region)
-                    log.progress(f"  State saved to {get_state_file(args.state_dir, region)}")
+                    # Only save state if there were changes or first run
+                    if region_state_changed:
+                        save_region_state(state, args.state_dir, region)
+                        log.progress(f"  State saved to {get_state_file(args.state_dir, region)}")
+                    else:
+                        log.progress(f"  No changes detected")
 
             # Output report to stdout (empty if no changes/first run)
             if args.format == "json":
