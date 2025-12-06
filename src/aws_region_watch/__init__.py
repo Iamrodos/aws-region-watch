@@ -333,7 +333,7 @@ def get_state_file(state_dir: Path, region: str) -> Path:
 
 def get_global_state_file(state_dir: Path) -> Path:
     """Get the global state file path (for regions list)."""
-    return state_dir / "_global.json"
+    return state_dir / "regions.json"
 
 
 def load_region_state(state_dir: Path, region: str) -> dict:
