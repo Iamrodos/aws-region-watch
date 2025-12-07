@@ -686,6 +686,8 @@ def format_markdown_report(
     lines.append(f"*Generated {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by [AWS Region Watch](https://github.com/Iamrodos/aws-region-watch) v{__version__}*")
     lines.append("")
     lines.append(f"*Data source: [{MCP_API_URL}]({MCP_API_URL})*")
+    lines.append("")
+    lines.append("*Check for official announcements: [AWS What's New](https://aws.amazon.com/about-aws/whats-new/)*")
 
     return "\n".join(lines)
 
