@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2025-12-06T20:26:07.916614",
+  "_last_updated": "2025-12-07T19:36:18.570389",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -7070,6 +7070,7 @@
     "Lambda+RemoveLayerVersionPermission": "isAvailableIn",
     "Lambda+RemovePermission": "isAvailableIn",
     "Lambda+SendDurableExecutionCallbackFailure": "isAvailableIn",
+    "Lambda+SendDurableExecutionCallbackHeartbeat": "isAvailableIn",
     "Lambda+SendDurableExecutionCallbackSuccess": "isAvailableIn",
     "Lambda+StopDurableExecution": "isAvailableIn",
     "Lambda+TagResource": "isAvailableIn",
@@ -13996,7 +13997,7 @@
     "Domain units and user authorization policies": "isAvailableIn",
     "Domains": "isAvailableIn",
     "Dual-Stack IP Address Support": "isAvailableIn",
-    "Dual-layer encryption": "isBeingPlannedIn",
+    "Dual-layer encryption": "isPlannedIn",
     "Dual-stack endpoints support": "isAvailableIn",
     "Dynamic Partitioning": "isAvailableIn",
     "DynamoDB tables and global secondary indexes Auto Scaling": "isAvailableIn",
