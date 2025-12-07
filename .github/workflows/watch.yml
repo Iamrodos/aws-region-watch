@@ -70,11 +70,16 @@ jobs:
             exit 1
           fi
 
+      - name: Get current date
+        if: steps.watch.outputs.exit_code == '1'
+        id: date
+        run: echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
       - name: Create issue if changes detected
         if: steps.watch.outputs.exit_code == '1'
         uses: peter-evans/create-issue-from-file@v6
         with:
-          title: "AWS Region Changes - $(date -u +%Y-%m-%d)"
+          title: "AWS Region Changes - ${{ steps.date.outputs.date }}"
           content-filepath: report.md
           labels: aws-changes
 
