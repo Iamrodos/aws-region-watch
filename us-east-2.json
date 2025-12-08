@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2025-12-07T19:36:18.570389",
+  "_last_updated": "2025-12-08T19:36:37.993965",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -7583,6 +7583,7 @@
     "MediaConnect+AddFlowSources": "isAvailableIn",
     "MediaConnect+AddFlowVpcInterfaces": "isAvailableIn",
     "MediaConnect+BatchGetRouterInput": "isAvailableIn",
+    "MediaConnect+BatchGetRouterNetworkInterface": "isAvailableIn",
     "MediaConnect+BatchGetRouterOutput": "isAvailableIn",
     "MediaConnect+CreateBridge": "isAvailableIn",
     "MediaConnect+CreateFlow": "isAvailableIn",
