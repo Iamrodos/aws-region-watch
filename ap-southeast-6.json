@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2025-12-08T19:35:18.589079",
+  "_last_updated": "2025-12-09T19:34:38.306614",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -5126,6 +5126,7 @@
     "AWS Transfer Family Web Apps": "isBeingPlannedIn",
     "AWS Transit Gateway": "isAvailableIn",
     "AWS VPN": "isAvailableIn",
+    "AWS Verified Access": "isBeingPlannedIn",
     "AWS WAF": "isPlannedIn",
     "AWS Wickr": "isBeingPlannedIn",
     "AWS X-Ray": "isAvailableIn",
@@ -5141,7 +5142,7 @@
     "Access control - Role based access control": "isAvailableIn",
     "Account Creation": "isBeingPlannedIn",
     "Account Factory": "isBeingPlannedIn",
-    "Account Factory Customization (AFC)": "isPlannedIn",
+    "Account Factory Customization (AFC)": "isBeingPlannedIn",
     "Account Factory for Terraform (AFT)": "isBeingPlannedIn",
     "Account recovery": "isAvailableIn",
     "Accuracy Retrieval and Generation": "isBeingPlannedIn",
@@ -5201,6 +5202,7 @@
     "Amazon CloudWatch Logs Metric Filter": "isAvailableIn",
     "Amazon CloudWatch Logs Subscription Filter": "isAvailableIn",
     "Amazon CloudWatch Logs transformation and enrichment": "isPlannedIn",
+    "Amazon CloudWatch Pipeline": "isBeingPlannedIn",
     "Amazon CloudWatch S3 Tables integration": "isBeingPlannedIn",
     "Amazon CloudWatch Unified Data Management": "isBeingPlannedIn",
     "Amazon Cognito": "isPlannedIn",

@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2025-12-06T06:05:23.584365",
+  "_last_updated": "2025-12-09T19:33:59.351971",
   "_schema_version": 1,
   "region": {
     "af-south-1": "Africa (Cape Town)",
@@ -27,6 +27,7 @@
     "eu-west-1": "Europe (Ireland)",
     "eu-west-2": "Europe (London)",
     "eu-west-3": "Europe (Paris)",
+    "eusc-de-east-1": "EU (Germany)",
     "il-central-1": "Israel (Tel Aviv)",
     "me-central-1": "Middle East (UAE)",
     "me-south-1": "Middle East (Bahrain)",
