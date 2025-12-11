@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2025-12-10T19:36:51.315235",
+  "_last_updated": "2025-12-11T19:37:53.082818",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -13436,7 +13436,7 @@
     "AWS Elemental MediaPackage": "isAvailableIn",
     "AWS Elemental MediaTailor": "isAvailableIn",
     "AWS End User Messaging": "isAvailableIn",
-    "AWS Entity Resolution": "isAvailableIn",
+    "AWS Entity Resolution": "isNotExpandingIn",
     "AWS Fargate": "isAvailableIn",
     "AWS Fault Injection Service": "isAvailableIn",
     "AWS Firewall Manager": "isAvailableIn",
@@ -13458,6 +13458,7 @@
     "AWS Lambda Event Source Mappings": "isAvailableIn",
     "AWS Lambda Provisioned Concurrency": "isAvailableIn",
     "AWS Lambda actions": "isAvailableIn",
+    "AWS Lambda durable functions": "isAvailableIn",
     "AWS License Manager": "isAvailableIn",
     "AWS Managed Applications Integration": "isAvailableIn",
     "AWS Managed Rules": "isAvailableIn",
