@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2025-12-11T19:37:53.082818",
+  "_last_updated": "2025-12-12T19:37:02.441189",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -13192,6 +13192,7 @@
     "odb+GetCloudExadataInfrastructure": "isAvailableIn",
     "odb+GetCloudExadataInfrastructureUnallocatedResources": "isAvailableIn",
     "odb+GetCloudVmCluster": "isAvailableIn",
+    "odb+GetDbNode": "isAvailableIn",
     "odb+GetDbServer": "isAvailableIn",
     "odb+GetOciOnboardingStatus": "isAvailableIn",
     "odb+GetOdbNetwork": "isAvailableIn",
