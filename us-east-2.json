@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2025-12-15T19:37:40.736484",
+  "_last_updated": "2025-12-16T19:37:06.096172",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -13626,6 +13626,7 @@
     "Amazon EFS integration with new EC2 Vertical Launch Instance Wizard": "isAvailableIn",
     "Amazon EKS Actions": "isAvailableIn",
     "Amazon EKS Auto Mode": "isAvailableIn",
+    "Amazon EKS Capabilities": "isAvailableIn",
     "Amazon EKS Hybrid Nodes": "isAvailableIn",
     "Amazon EMR": "isAvailableIn",
     "Amazon EMR Serverless": "isAvailableIn",
@@ -14465,6 +14466,7 @@
     "Redshift Serverless": "isAvailableIn",
     "Redshift Spectrum": "isAvailableIn",
     "Region Switch": "isAvailableIn",
+    "Reinforcement Learning": "isBeingPlannedIn",
     "Reject action support": "isAvailableIn",
     "Remove AZ for NLB": "isAvailableIn",
     "Repository Creation Templates": "isAvailableIn",
