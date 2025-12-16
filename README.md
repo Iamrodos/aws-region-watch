@@ -196,6 +196,20 @@ The API is maintained by AWS, but we don't have visibility into:
 
 If you notice discrepancies between this tool's output and actual service availability, the API data may be stale or incomplete. Always verify critical availability information through official AWS channels such as the [Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) or [AWS Capabilities by Region](https://builder.aws.com/capabilities/).
 
+## GitHub Actions Setup
+
+A handly place to run this is as a scheduled GitHub action. You can use this to get notified when AWS services become available in your regions. See [`.github/workflows/watch.yml`](.github/workflows/watch.yml) for a working example.
+
+### State Storage
+
+The tool needs to persist state between runs to detect changes. The example workflow stores state in a separate orphan `state` branch - this keeps state versioned and auditable without polluting main branch history.
+
+Other persistence options (S3, artifact storage, etc.) are left as an exercise for the reader.
+
+### Notifications
+
+The example workflow creates GitHub Issues, but you can also use Slack, email, Discord, Teams, or any webhook.
+
 ## Future Ideas
 
 - **GitHub Action setup wizard** - Interactive `--init-action` command that generates a ready-to-use workflow file with your preferred regions, schedule, and notification method
