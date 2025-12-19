@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2025-12-18T19:35:54.462399",
+  "_last_updated": "2025-12-19T19:35:01.242219",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -2009,6 +2009,7 @@
     "CloudWatch Logs+CancelImportTask": "isAvailableIn",
     "CloudWatch Logs+CreateDelivery": "isAvailableIn",
     "CloudWatch Logs+CreateExportTask": "isAvailableIn",
+    "CloudWatch Logs+CreateImportTask": "isAvailableIn",
     "CloudWatch Logs+CreateLogAnomalyDetector": "isAvailableIn",
     "CloudWatch Logs+CreateLogGroup": "isAvailableIn",
     "CloudWatch Logs+CreateLogStream": "isAvailableIn",
@@ -14105,7 +14106,7 @@
     "FIPS 140-2 Compliant Endpoints": "isAvailableIn",
     "FIPS 140-2 Endpoints": "isAvailableIn",
     "FIPS 140-2 and 140-3 Endpoints": "isAvailableIn",
-    "FMS Security Policy for Fortigate CNF": "isAvailableIn",
+    "FMS Security Policy for Fortigate CNF": "isBeingPlannedIn",
     "FMS Security Policy for Import Network Firewall": "isAvailableIn",
     "FMS Security Policy for Network ACL Common": "isAvailableIn",
     "FMS Security Policy for SG Common": "isAvailableIn",
