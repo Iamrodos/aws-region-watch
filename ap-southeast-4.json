@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-01-13T19:36:01.683216",
+  "_last_updated": "2026-01-14T19:36:21.856609",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -5138,6 +5138,7 @@
     "RDS+PurchaseReservedDBInstancesOffering": "isAvailableIn",
     "RDS+RebootDBCluster": "isAvailableIn",
     "RDS+RebootDBInstance": "isAvailableIn",
+    "RDS+RebootDBShardGroup": "isAvailableIn",
     "RDS+RegisterDBProxyTargets": "isAvailableIn",
     "RDS+RemoveFromGlobalCluster": "isAvailableIn",
     "RDS+RemoveRoleFromDBCluster": "isAvailableIn",
