@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-01-22T19:39:35.475144",
+  "_last_updated": "2026-01-23T19:37:36.052735",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -13581,7 +13581,7 @@
     "Amazon Redshift Serverless": "isAvailableIn",
     "Amazon Redshift Serverless Destination": "isAvailableIn",
     "Amazon Rekognition": "isAvailableIn",
-    "Amazon Relational Database Service (RDS)": "isBeingPlannedIn",
+    "Amazon Relational Database Service (RDS)": "isAvailableIn",
     "Amazon Route 53": "isAvailableIn",
     "Amazon Route 53 Private DNS": "isAvailableIn",
     "Amazon Route 53 Public DNS": "isAvailableIn",
@@ -13898,7 +13898,7 @@
     "EC2 Fleet": "isAvailableIn",
     "EC2 Hibernate": "isAvailableIn",
     "EC2 Instance Connect": "isAvailableIn",
-    "EC2 Interruptible Capacity Reservations": "isBeingPlannedIn",
+    "EC2 Interruptible Capacity Reservations": "isAvailableIn",
     "EC2 Launch Templates": "isAvailableIn",
     "EC2 Network Reachability Analysis": "isAvailableIn",
     "EC2 Operating System CIS Scanning": "isAvailableIn",
@@ -14433,7 +14433,7 @@
     "Session Management": "isAvailableIn",
     "Session Manager": "isAvailableIn",
     "Shield Advanced Console (V1)": "isAvailableIn",
-    "Shield Advanced Console (V2)": "isBeingPlannedIn",
+    "Shield Advanced Console (V2)": "isAvailableIn",
     "Signals": "isAvailableIn",
     "Signed URLs and Cookies": "isAvailableIn",
     "Simple AD": "isNotExpandingIn",
