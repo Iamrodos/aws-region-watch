@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-01-30T19:43:27.775488",
+  "_last_updated": "2026-01-31T19:37:30.650683",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -4287,6 +4287,7 @@
     "MediaLive+DescribeMultiplexProgram": "isAvailableIn",
     "MediaLive+DescribeNetwork": "isAvailableIn",
     "MediaLive+DescribeOffering": "isAvailableIn",
+    "MediaLive+DescribeReservation": "isAvailableIn",
     "MediaLive+DescribeSchedule": "isAvailableIn",
     "MediaLive+DescribeSdiSource": "isAvailableIn",
     "MediaLive+DescribeThumbnails": "isAvailableIn",
@@ -7568,7 +7569,7 @@
     "Amazon FSx for NetApp ONTAP": "isAvailableIn",
     "Amazon FSx for OpenZFS": "isPlannedIn",
     "Amazon FSx for Windows File Server": "isAvailableIn",
-    "Amazon GameLift Servers": "isNotExpandingIn",
+    "Amazon GameLift Servers": "isAvailableIn",
     "Amazon GuardDuty": "isAvailableIn",
     "Amazon GuardDuty Runtime Monitoring": "isAvailableIn",
     "Amazon Inspector": "isAvailableIn",
@@ -7674,7 +7675,7 @@
     "Amazon SageMaker TensorBoard": "isNotExpandingIn",
     "Amazon SageMaker Training": "isAvailableIn",
     "Amazon Security Lake": "isNotExpandingIn",
-    "Amazon Simple Email Service (SES)": "isPlannedIn",
+    "Amazon Simple Email Service (SES)": "isBeingPlannedIn",
     "Amazon Simple Notification Service (SNS)": "isAvailableIn",
     "Amazon Simple Queue Service (SQS)": "isAvailableIn",
     "Amazon Simple Storage Service (S3)": "isAvailableIn",
