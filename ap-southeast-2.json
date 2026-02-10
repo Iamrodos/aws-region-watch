@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-02-08T19:39:10.677439",
+  "_last_updated": "2026-02-10T19:52:04.823316",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -15420,7 +15420,7 @@
     "Cognito Integration": "isAvailableIn",
     "Cold HDD volume types (sc1)": "isAvailableIn",
     "Compliance Monitoring": "isAvailableIn",
-    "Comprehend Auto Scaling": "isBeingPlannedIn",
+    "Comprehend Auto Scaling": "isAvailableIn",
     "Concurrency Scaling": "isAvailableIn",
     "Conditional Writes": "isAvailableIn",
     "Config Integration for Evidence Collection": "isAvailableIn",
@@ -16039,7 +16039,7 @@
     "SFTP connectors with egress type VPC_LATTICE": "isAvailableIn",
     "SMS": "isAvailableIn",
     "SMS Protect": "isAvailableIn",
-    "SOC2 Compliance": "isBeingPlannedIn",
+    "SOC2 Compliance": "isAvailableIn",
     "SQL JDBC Workbench": "isAvailableIn",
     "SQL Querying": "isAvailableIn",
     "SSD storage class": "isAvailableIn",
