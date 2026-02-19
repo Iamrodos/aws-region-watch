@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-02-18T19:48:24.098702",
+  "_last_updated": "2026-02-19T19:45:23.028523",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -13298,6 +13298,7 @@
     "AWS Gateway API Controller EKS Controller for VPC Lattice": "isAvailableIn",
     "AWS Global Accelerator": "isAvailableIn",
     "AWS Glue": "isAvailableIn",
+    "AWS Glue Schema registry": "isAvailableIn",
     "AWS Ground Station": "isAvailableIn",
     "AWS IAM Identity Center": "isAvailableIn",
     "AWS Identity and Access Management (IAM)": "isAvailableIn",
