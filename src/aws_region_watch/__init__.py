@@ -315,6 +315,9 @@ def fetch_region_resources(region: str, resource_type: str) -> dict[str, str]:
         if not isinstance(page_resources, dict):
             raise APIError(f"Unexpected API response: '{result_key}' is not a dict. Got: {type(page_resources).__name__}")
         for name, status in page_resources.items():
+            # API may return status as a dict {"status": "isAvailableIn"} or plain string
+            if isinstance(status, dict):
+                status = status.get("status", str(status))
             resources[name] = status
 
         log.detail(f"Page {page}: fetched {len(page_resources)} {resource_type}s")
