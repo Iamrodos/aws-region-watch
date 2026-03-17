@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-03-15T19:41:40.387772",
+  "_last_updated": "2026-03-17T19:49:25.823527",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -12341,6 +12341,7 @@
     "SageMaker+DescribeSubscribedWorkteam": "isAvailableIn",
     "SageMaker+DescribeTrainingJob": "isAvailableIn",
     "SageMaker+DescribeTrainingPlan": "isAvailableIn",
+    "SageMaker+DescribeTrainingPlanExtensionHistory": "isAvailableIn",
     "SageMaker+DescribeTransformJob": "isAvailableIn",
     "SageMaker+DescribeTrial": "isAvailableIn",
     "SageMaker+DescribeTrialComponent": "isAvailableIn",
@@ -15248,7 +15249,7 @@
     "Amazon Q Business": "isAvailableIn",
     "Amazon Q Developer": "isNotExpandingIn",
     "Amazon Q in Connect": "isAvailableIn",
-    "Amazon Quick Automate": "isPlannedIn",
+    "Amazon Quick Automate": "isBeingPlannedIn",
     "Amazon Quick Flows": "isAvailableIn",
     "Amazon Quick Research": "isAvailableIn",
     "Amazon Quick Suite": "isAvailableIn",
