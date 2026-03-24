@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-03-23T19:48:04.776256",
+  "_last_updated": "2026-03-24T19:49:14.023080",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -7363,6 +7363,7 @@
     "odb+ListCloudVmClusters": "isAvailableIn",
     "odb+ListDbNodes": "isAvailableIn",
     "odb+ListDbServers": "isAvailableIn",
+    "odb+ListOdbNetworks": "isAvailableIn",
     "odb+ListOdbPeeringConnections": "isAvailableIn",
     "odb+ListTagsForResource": "isAvailableIn",
     "odb+TagResource": "isAvailableIn",
@@ -7537,7 +7538,7 @@
     "AWS Network Firewall": "isAvailableIn",
     "AWS Network Firewall Integration": "isAvailableIn",
     "AWS Organizations": "isAvailableIn",
-    "AWS Outposts": "isPlannedIn",
+    "AWS Outposts": "isBeingPlannedIn",
     "AWS Payment Cryptography": "isBeingPlannedIn",
     "AWS Private CA support for OCSP": "isAvailableIn",
     "AWS Private CA support for PrivateLink": "isAvailableIn",
