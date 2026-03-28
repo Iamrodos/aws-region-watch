@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-03-27T19:45:38.296470",
+  "_last_updated": "2026-03-28T19:42:27.772774",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -12241,6 +12241,7 @@
     "WorkSpaces+CreateWorkspaceImage": "isAvailableIn",
     "WorkSpaces+CreateWorkspaces": "isAvailableIn",
     "WorkSpaces+DeleteClientBranding": "isAvailableIn",
+    "WorkSpaces+DeleteConnectClientAddIn": "isAvailableIn",
     "WorkSpaces+DeleteConnectionAlias": "isAvailableIn",
     "WorkSpaces+DeleteTags": "isAvailableIn",
     "WorkSpaces+DeleteWorkspaceImage": "isAvailableIn",
@@ -12259,6 +12260,7 @@
     "WorkSpaces+DescribeWorkspaceImages": "isAvailableIn",
     "WorkSpaces+DescribeWorkspaceSnapshots": "isAvailableIn",
     "WorkSpaces+DescribeWorkspaces": "isAvailableIn",
+    "WorkSpaces+DescribeWorkspacesConnectionStatus": "isAvailableIn",
     "WorkSpaces+DisassociateConnectionAlias": "isAvailableIn",
     "WorkSpaces+ImportClientBranding": "isAvailableIn",
     "WorkSpaces+ListAvailableManagementCidrRanges": "isAvailableIn",
