@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-04-12T19:45:28.317014",
+  "_last_updated": "2026-04-13T19:54:20.397561",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -12398,6 +12398,7 @@
     "WorkSpaces+UpdateConnectClientAddIn": "isAvailableIn",
     "WorkSpaces+UpdateConnectionAliasPermission": "isAvailableIn",
     "WorkSpaces+UpdateRulesOfIpGroup": "isAvailableIn",
+    "WorkSpaces+UpdateWorkspaceBundle": "isAvailableIn",
     "WorkSpaces+UpdateWorkspaceImagePermission": "isAvailableIn",
     "Workspaces Instances+AssociateVolume": "isAvailableIn",
     "Workspaces Instances+CreateVolume": "isAvailableIn",
