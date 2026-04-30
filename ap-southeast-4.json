@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-04-29T20:01:17.225568",
+  "_last_updated": "2026-04-30T19:59:29.349601",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -8678,7 +8678,7 @@
     "Optimized Reads": "isAvailableIn",
     "Option Groups": "isNotExpandingIn",
     "Optional plugins": "isAvailableIn",
-    "Oracle Database@AWS": "isPlannedIn",
+    "Oracle Database@AWS": "isAvailableIn",
     "Oracle Database@AWS Integration": "isBeingPlannedIn",
     "Organizational Units": "isAvailableIn",
     "Outbound Email (API)": "isPlannedIn",
