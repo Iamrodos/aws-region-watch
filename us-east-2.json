@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-05-03T19:49:15.286210",
+  "_last_updated": "2026-05-06T20:05:39.211661",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -13699,6 +13699,7 @@
     "AWS Step Functions": "isAvailableIn",
     "AWS Step Functions Workflow Studio": "isAvailableIn",
     "AWS Storage Gateway": "isAvailableIn",
+    "AWS Sustainability": "isAvailableIn",
     "AWS Systems Manager": "isAvailableIn",
     "AWS Systems Manager for SAP": "isAvailableIn",
     "AWS Transfer Family": "isAvailableIn",
