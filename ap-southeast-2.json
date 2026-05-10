@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-05-09T19:49:17.832652",
+  "_last_updated": "2026-05-10T19:49:45.744299",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -12889,6 +12889,7 @@
     "SecurityAgent+ListPentests": "isAvailableIn",
     "SecurityAgent+ListTagsForResource": "isAvailableIn",
     "SecurityAgent+ListTargetDomains": "isAvailableIn",
+    "SecurityAgent+StartCodeRemediation": "isAvailableIn",
     "SecurityAgent+StartPentestJob": "isAvailableIn",
     "SecurityAgent+StopPentestJob": "isAvailableIn",
     "SecurityAgent+TagResource": "isAvailableIn",
