@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-05-09T19:49:46.905023",
+  "_last_updated": "2026-05-13T20:10:46.212871",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -13643,6 +13643,7 @@
     "AWS DataSync simplifies initial setup for online data transfers": "isAvailableIn",
     "AWS Database Migration Service (AWS DMS)": "isAvailableIn",
     "AWS Deadline Cloud": "isAvailableIn",
+    "AWS DevOps Agent": "isBeingPlannedIn",
     "AWS Direct Connect": "isAvailableIn",
     "AWS Direct Connect Resiliency Toolkit": "isAvailableIn",
     "AWS Direct Connect SiteLink": "isAvailableIn",
