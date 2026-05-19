@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-05-16T19:52:11.185484",
+  "_last_updated": "2026-05-19T20:08:04.878495",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -7769,7 +7769,7 @@
     "AWS CloudFormation IAC Generator": "isAvailableIn",
     "AWS CloudFormation Service Quotas": "isAvailableIn",
     "AWS CloudFormation StackSets": "isAvailableIn",
-    "AWS CloudHSM": "isPlannedIn",
+    "AWS CloudHSM": "isBeingPlannedIn",
     "AWS CloudShell": "isAvailableIn",
     "AWS CloudTrail": "isAvailableIn",
     "AWS CloudTrail Event History": "isAvailableIn",
@@ -8288,7 +8288,7 @@
     "Control Tower integration with AWS Backup": "isAvailableIn",
     "Control Tower integration with AWS CloudTrail": "isAvailableIn",
     "Control Tower integration with AWS Config": "isAvailableIn",
-    "Copy CloudHSM backups across regions": "isPlannedIn",
+    "Copy CloudHSM backups across regions": "isBeingPlannedIn",
     "Cosine Similarity": "isAvailableIn",
     "Create/Run Assessments": "isNotExpandingIn",
     "Credential Guard": "isAvailableIn",

@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-05-18T20:06:40.009256",
+  "_last_updated": "2026-05-19T20:08:35.183410",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -1393,6 +1393,7 @@
     "Bedrock AgentCore Control+ListOnlineEvaluationConfigs": "isAvailableIn",
     "Bedrock AgentCore Control+ListPaymentCredentialProviders": "isAvailableIn",
     "Bedrock AgentCore Control+ListPolicies": "isAvailableIn",
+    "Bedrock AgentCore Control+ListPolicyEngineSummaries": "isAvailableIn",
     "Bedrock AgentCore Control+ListPolicyEngines": "isAvailableIn",
     "Bedrock AgentCore Control+ListPolicyGenerationAssets": "isAvailableIn",
     "Bedrock AgentCore Control+ListPolicyGenerationSummaries": "isAvailableIn",
