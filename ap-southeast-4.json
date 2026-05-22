@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-05-21T20:10:19.057536",
+  "_last_updated": "2026-05-22T20:10:48.590797",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -8049,7 +8049,7 @@
     "Amazon Managed Streaming for Apache Kafka (MSK) broker storage Auto Scaling": "isPlannedIn",
     "Amazon Managed Workflows for Apache Airflow (MWAA)": "isAvailableIn",
     "Amazon MemoryDB": "isNotExpandingIn",
-    "Amazon Neptune": "isPlannedIn",
+    "Amazon Neptune": "isBeingPlannedIn",
     "Amazon Neptune Analytics": "isBeingPlannedIn",
     "Amazon Neptune clusters Auto Scaling": "isPlannedIn",
     "Amazon OpenSearch Dashboards for vended logs in CloudWatch": "isPlannedIn",
@@ -8204,7 +8204,7 @@
     "Backup and restore - Point-in-time restore": "isAvailableIn",
     "Backup and restore - Restores of on-demand backups": "isAvailableIn",
     "Backups": "isAvailableIn",
-    "Backups for SAP HANA on EC2": "isPlannedIn",
+    "Backups for SAP HANA on EC2": "isBeingPlannedIn",
     "Backups for Windows VSS": "isAvailableIn",
     "Basic Function Execution": "isAvailableIn",
     "Batch Retrieval": "isAvailableIn",
