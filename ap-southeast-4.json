@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-05-30T19:54:39.246459",
+  "_last_updated": "2026-05-31T19:54:18.875112",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -5745,6 +5745,9 @@
     "Route53Resolver+AssociateResolverEndpointIpAddress": "isAvailableIn",
     "Route53Resolver+AssociateResolverQueryLogConfig": "isAvailableIn",
     "Route53Resolver+AssociateResolverRule": "isAvailableIn",
+    "Route53Resolver+BatchCreateFirewallRule": "isAvailableIn",
+    "Route53Resolver+BatchDeleteFirewallRule": "isAvailableIn",
+    "Route53Resolver+BatchUpdateFirewallRule": "isAvailableIn",
     "Route53Resolver+CreateFirewallDomainList": "isAvailableIn",
     "Route53Resolver+CreateFirewallRule": "isAvailableIn",
     "Route53Resolver+CreateFirewallRuleGroup": "isAvailableIn",
@@ -5781,6 +5784,7 @@
     "Route53Resolver+ListFirewallDomains": "isAvailableIn",
     "Route53Resolver+ListFirewallRuleGroupAssociations": "isAvailableIn",
     "Route53Resolver+ListFirewallRuleGroups": "isAvailableIn",
+    "Route53Resolver+ListFirewallRuleTypes": "isAvailableIn",
     "Route53Resolver+ListFirewallRules": "isAvailableIn",
     "Route53Resolver+ListResolverConfigs": "isAvailableIn",
     "Route53Resolver+ListResolverDnssecConfigs": "isAvailableIn",
@@ -6589,6 +6593,7 @@
     "SageMaker+StopProcessingJob": "isAvailableIn",
     "SageMaker+StopTrainingJob": "isAvailableIn",
     "SageMaker+StopTransformJob": "isAvailableIn",
+    "SageMaker+UpdateAppImageConfig": "isAvailableIn",
     "SageMaker+UpdateCluster": "isAvailableIn",
     "SageMaker+UpdateClusterSchedulerConfig": "isAvailableIn",
     "SageMaker+UpdateClusterSoftware": "isAvailableIn",
