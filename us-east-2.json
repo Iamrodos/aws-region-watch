@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-05-31T19:54:37.699948",
+  "_last_updated": "2026-06-01T20:50:06.484779",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -1330,6 +1330,7 @@
     "Bedrock AgentCore Control+CreateGateway": "isAvailableIn",
     "Bedrock AgentCore Control+CreateGatewayRule": "isAvailableIn",
     "Bedrock AgentCore Control+CreateGatewayTarget": "isAvailableIn",
+    "Bedrock AgentCore Control+CreateHarness": "isAvailableIn",
     "Bedrock AgentCore Control+CreateMemory": "isAvailableIn",
     "Bedrock AgentCore Control+CreateOauth2CredentialProvider": "isAvailableIn",
     "Bedrock AgentCore Control+CreateOnlineEvaluationConfig": "isAvailableIn",
@@ -1350,6 +1351,7 @@
     "Bedrock AgentCore Control+DeleteGateway": "isAvailableIn",
     "Bedrock AgentCore Control+DeleteGatewayRule": "isAvailableIn",
     "Bedrock AgentCore Control+DeleteGatewayTarget": "isAvailableIn",
+    "Bedrock AgentCore Control+DeleteHarness": "isAvailableIn",
     "Bedrock AgentCore Control+DeleteMemory": "isAvailableIn",
     "Bedrock AgentCore Control+DeleteOauth2CredentialProvider": "isAvailableIn",
     "Bedrock AgentCore Control+DeleteOnlineEvaluationConfig": "isAvailableIn",
@@ -1371,6 +1373,7 @@
     "Bedrock AgentCore Control+GetGateway": "isAvailableIn",
     "Bedrock AgentCore Control+GetGatewayRule": "isAvailableIn",
     "Bedrock AgentCore Control+GetGatewayTarget": "isAvailableIn",
+    "Bedrock AgentCore Control+GetHarness": "isAvailableIn",
     "Bedrock AgentCore Control+GetMemory": "isAvailableIn",
     "Bedrock AgentCore Control+GetOauth2CredentialProvider": "isAvailableIn",
     "Bedrock AgentCore Control+GetOnlineEvaluationConfig": "isAvailableIn",
@@ -13602,6 +13605,7 @@
     "resiliencehubv2+GetSystem": "isAvailableIn",
     "resiliencehubv2+GetUserJourney": "isAvailableIn",
     "resiliencehubv2+ImportApp": "isAvailableIn",
+    "resiliencehubv2+ImportPolicy": "isAvailableIn",
     "resiliencehubv2+ListAssertions": "isAvailableIn",
     "resiliencehubv2+ListDependencies": "isAvailableIn",
     "resiliencehubv2+ListFailureModeAssessments": "isAvailableIn",
