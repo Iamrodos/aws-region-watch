@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-06-03T20:33:45.368396",
+  "_last_updated": "2026-06-04T20:16:33.383578",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -2175,6 +2175,7 @@
     "EC2+CopyVolumes": "isAvailableIn",
     "EC2+CreateCapacityReservation": "isAvailableIn",
     "EC2+CreateCapacityReservationBySplitting": "isAvailableIn",
+    "EC2+CreateCapacityReservationCancellationQuote": "isAvailableIn",
     "EC2+CreateCapacityReservationFleet": "isAvailableIn",
     "EC2+CreateClientVpnEndpoint": "isAvailableIn",
     "EC2+CreateClientVpnRoute": "isAvailableIn",
@@ -2358,6 +2359,7 @@
     "EC2+DescribeCapacityBlockStatus": "isAvailableIn",
     "EC2+DescribeCapacityBlocks": "isAvailableIn",
     "EC2+DescribeCapacityReservationBillingRequests": "isAvailableIn",
+    "EC2+DescribeCapacityReservationCancellationQuotes": "isAvailableIn",
     "EC2+DescribeCapacityReservationFleets": "isAvailableIn",
     "EC2+DescribeCapacityReservationTopology": "isAvailableIn",
     "EC2+DescribeCapacityReservations": "isAvailableIn",
@@ -5502,6 +5504,7 @@
     "Redshift Serverless+UntagResource": "isAvailableIn",
     "Redshift Serverless+UpdateCustomDomainAssociation": "isAvailableIn",
     "Redshift Serverless+UpdateEndpointAccess": "isAvailableIn",
+    "Redshift Serverless+UpdateLakehouseConfiguration": "isAvailableIn",
     "Redshift Serverless+UpdateNamespace": "isAvailableIn",
     "Redshift Serverless+UpdateScheduledAction": "isAvailableIn",
     "Redshift Serverless+UpdateSnapshot": "isAvailableIn",
@@ -6585,6 +6588,7 @@
     "SageMaker+ListUltraServersByReservedCapacity": "isAvailableIn",
     "SageMaker+ListUserProfiles": "isAvailableIn",
     "SageMaker+RetryPipelineExecution": "isAvailableIn",
+    "SageMaker+Search": "isAvailableIn",
     "SageMaker+SearchTrainingPlanOfferings": "isAvailableIn",
     "SageMaker+SendPipelineExecutionStepFailure": "isAvailableIn",
     "SageMaker+SendPipelineExecutionStepSuccess": "isAvailableIn",
