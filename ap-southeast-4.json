@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-06-08T20:17:17.515623",
+  "_last_updated": "2026-06-10T20:19:09.443879",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -6543,6 +6543,7 @@
     "SageMaker+StartMlflowTrackingServer": "isAvailableIn",
     "SageMaker+StartNotebookInstance": "isAvailableIn",
     "SageMaker+StartPipelineExecution": "isAvailableIn",
+    "SageMaker+StartSession": "isAvailableIn",
     "SageMaker+StopHyperParameterTuningJob": "isAvailableIn",
     "SageMaker+StopInferenceExperiment": "isAvailableIn",
     "SageMaker+StopMlflowTrackingServer": "isAvailableIn",
