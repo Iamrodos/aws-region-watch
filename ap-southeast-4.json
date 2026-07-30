@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-07-29T19:57:03.882498",
+  "_last_updated": "2026-07-30T20:02:06.066247",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -6321,6 +6321,7 @@
     "S3Tables+PutTableBucketStorageClass": "isAvailableIn",
     "S3Tables+PutTableMaintenanceConfiguration": "isAvailableIn",
     "S3Tables+PutTablePolicy": "isAvailableIn",
+    "S3Tables+PutTableRecordExpirationConfiguration": "isAvailableIn",
     "S3Tables+PutTableReplication": "isAvailableIn",
     "S3Tables+RenameTable": "isAvailableIn",
     "S3Tables+TagResource": "isAvailableIn",
@@ -8310,7 +8311,7 @@
     "AWS CloudFormation IAC Generator": "isAvailableIn",
     "AWS CloudFormation Service Quotas": "isAvailableIn",
     "AWS CloudFormation StackSets": "isAvailableIn",
-    "AWS CloudHSM": "isAvailableIn",
+    "AWS CloudHSM": "isNotExpandingIn",
     "AWS CloudShell": "isAvailableIn",
     "AWS CloudTrail": "isAvailableIn",
     "AWS CloudTrail Event History": "isAvailableIn",
@@ -8358,7 +8359,7 @@
     "AWS Gateway API Controller EKS Controller for VPC Lattice": "isAvailableIn",
     "AWS Global Accelerator": "isAvailableIn",
     "AWS Glue": "isAvailableIn",
-    "AWS Glue Schema registry": "isNotExpandingIn",
+    "AWS Glue Schema registry": "isAvailableIn",
     "AWS Ground Station": "isNotExpandingIn",
     "AWS IAM Identity Center": "isAvailableIn",
     "AWS Identity and Access Management (IAM)": "isAvailableIn",
