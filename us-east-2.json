@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-08-23T19:46:01.106995",
+  "_last_updated": "2026-08-24T19:55:20.967022",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -9377,6 +9377,7 @@
     "Outposts+CreateOutpost": "isAvailableIn",
     "Outposts+CreatePrivateConnectivityConfig": "isAvailableIn",
     "Outposts+CreateQuote": "isAvailableIn",
+    "Outposts+CreateRenewal": "isAvailableIn",
     "Outposts+CreateSite": "isAvailableIn",
     "Outposts+DeleteOutpost": "isAvailableIn",
     "Outposts+DeleteQuote": "isAvailableIn",
@@ -15518,7 +15519,7 @@
     "EC2 Network Reachability Analysis": "isAvailableIn",
     "EC2 Operating System CIS Scanning": "isAvailableIn",
     "EC2 Partition Placement Groups": "isAvailableIn",
-    "EC2 Spot Instances": "isAvailableIn",
+    "EC2 Spot Instances": "isBeingPlannedIn",
     "EC2 Spread Placement Groups": "isAvailableIn",
     "ECR Container Image Scanning": "isAvailableIn",
     "ECR IPv6 support": "isAvailableIn",
