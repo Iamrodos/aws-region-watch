@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-08-28T03:39:40.024217",
+  "_last_updated": "2026-08-29T21:53:28.439977",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -2848,6 +2848,7 @@
     "Cognito Identity Provider+AdminAddUserToGroup": "isAvailableIn",
     "Cognito Identity Provider+AdminConfirmSignUp": "isAvailableIn",
     "Cognito Identity Provider+AdminCreateUser": "isAvailableIn",
+    "Cognito Identity Provider+AdminDeleteSoftwareToken": "isAvailableIn",
     "Cognito Identity Provider+AdminDeleteUser": "isAvailableIn",
     "Cognito Identity Provider+AdminDeleteUserAttributes": "isAvailableIn",
     "Cognito Identity Provider+AdminDisableProviderForUser": "isAvailableIn",
@@ -4988,6 +4989,7 @@
     "EC2+ReleaseIpamPoolAllocation": "isAvailableIn",
     "EC2+ReplaceIamInstanceProfileAssociation": "isAvailableIn",
     "EC2+ReplaceImageCriteriaInAllowedImagesSettings": "isAvailableIn",
+    "EC2+ReplaceImageInstanceTypeSpecification": "isAvailableIn",
     "EC2+ReplaceNetworkAclAssociation": "isAvailableIn",
     "EC2+ReplaceNetworkAclEntry": "isAvailableIn",
     "EC2+ReplaceRoute": "isAvailableIn",
