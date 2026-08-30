@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-08-29T21:53:00.886784",
+  "_last_updated": "2026-08-30T21:58:20.721078",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -1664,6 +1664,7 @@
     "Bedrock AgentCore+GetWorkloadAccessToken": "isAvailableIn",
     "Bedrock AgentCore+GetWorkloadAccessTokenForJWT": "isAvailableIn",
     "Bedrock AgentCore+GetWorkloadAccessTokenForUserId": "isAvailableIn",
+    "Bedrock AgentCore+IngestData": "isAvailableIn",
     "Bedrock AgentCore+InvokeAgentRuntime": "isAvailableIn",
     "Bedrock AgentCore+InvokeAgentRuntimeCommand": "isAvailableIn",
     "Bedrock AgentCore+InvokeBrowser": "isAvailableIn",
@@ -3144,6 +3145,7 @@
     "Cognito Identity Provider+ForgetDevice": "isAvailableIn",
     "Cognito Identity Provider+ForgotPassword": "isAvailableIn",
     "Cognito Identity Provider+GetCSVHeader": "isAvailableIn",
+    "Cognito Identity Provider+GetClientToken": "isAvailableIn",
     "Cognito Identity Provider+GetDevice": "isAvailableIn",
     "Cognito Identity Provider+GetGroup": "isAvailableIn",
     "Cognito Identity Provider+GetIdentityProviderByIdentifier": "isAvailableIn",
