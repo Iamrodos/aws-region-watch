@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-08-30T21:59:02.307429",
+  "_last_updated": "2026-08-31T23:17:51.803792",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -14029,6 +14029,7 @@
     "drs+GetLaunchConfiguration": "isAvailableIn",
     "drs+GetRecoveryPlan": "isAvailableIn",
     "drs+GetRecoveryPlanExecution": "isAvailableIn",
+    "drs+GetRecoveryPlanExecutionStep": "isAvailableIn",
     "drs+GetRecoveryPlanStep": "isAvailableIn",
     "drs+GetReplicationConfiguration": "isAvailableIn",
     "drs+InitializeService": "isAvailableIn",
@@ -14042,6 +14043,7 @@
     "drs+ListTagsForResource": "isAvailableIn",
     "drs+PutLaunchAction": "isAvailableIn",
     "drs+ReorderRecoveryPlanSteps": "isAvailableIn",
+    "drs+RetryRecoveryPlanExecutionStep": "isAvailableIn",
     "drs+ReverseReplication": "isAvailableIn",
     "drs+StartFailbackLaunch": "isAvailableIn",
     "drs+StartRecovery": "isAvailableIn",
