@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-09-07T22:12:26.382833",
+  "_last_updated": "2026-09-08T21:58:11.064806",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -5757,6 +5757,7 @@
     "PCS+RegisterComputeNodeGroupInstance": "isNotAvailableIn",
     "PCS+TagResource": "isNotAvailableIn",
     "PCS+UntagResource": "isNotAvailableIn",
+    "PCS+UpdateCluster": "isNotAvailableIn",
     "PCS+UpdateComputeNodeGroup": "isNotAvailableIn",
     "PCS+UpdateQueue": "isNotAvailableIn",
     "PI+CreatePerformanceAnalysisReport": "isAvailableIn",
