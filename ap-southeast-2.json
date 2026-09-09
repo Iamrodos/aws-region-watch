@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-09-08T21:57:54.565539",
+  "_last_updated": "2026-09-09T21:50:08.039199",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -11502,6 +11502,7 @@
     "QuickSight+SearchKnowledgeBases": "isAvailableIn",
     "QuickSight+SearchSpaces": "isAvailableIn",
     "QuickSight+SearchTopics": "isAvailableIn",
+    "QuickSight+SearchTopicsV2": "isAvailableIn",
     "QuickSight+StartAssetBundleExportJob": "isAvailableIn",
     "QuickSight+StartAssetBundleImportJob": "isAvailableIn",
     "QuickSight+StartAutomationJob": "isAvailableIn",
@@ -15026,6 +15027,7 @@
     "WellArchitected+GetAgentContext": "isAvailableIn",
     "WellArchitected+GetAgentGoal": "isAvailableIn",
     "WellArchitected+GetAgentProfile": "isAvailableIn",
+    "WellArchitected+GetAgentRecommendation": "isAvailableIn",
     "WellArchitected+GetAnswer": "isAvailableIn",
     "WellArchitected+GetConsolidatedReport": "isAvailableIn",
     "WellArchitected+GetGlobalSettings": "isAvailableIn",
@@ -15045,6 +15047,7 @@
     "WellArchitected+ListAgentGoals": "isAvailableIn",
     "WellArchitected+ListAgentProfiles": "isAvailableIn",
     "WellArchitected+ListAgentRecommendationGenerations": "isAvailableIn",
+    "WellArchitected+ListAgentRecommendationItems": "isAvailableIn",
     "WellArchitected+ListAgentRecommendations": "isAvailableIn",
     "WellArchitected+ListAnswers": "isAvailableIn",
     "WellArchitected+ListCheckDetails": "isAvailableIn",
@@ -15070,6 +15073,7 @@
     "WellArchitected+UpdateAgentContext": "isAvailableIn",
     "WellArchitected+UpdateAgentGoal": "isAvailableIn",
     "WellArchitected+UpdateAgentProfile": "isAvailableIn",
+    "WellArchitected+UpdateAgentRecommendationStatus": "isAvailableIn",
     "WellArchitected+UpdateAnswer": "isAvailableIn",
     "WellArchitected+UpdateGlobalSettings": "isAvailableIn",
     "WellArchitected+UpdateLensReview": "isAvailableIn",
