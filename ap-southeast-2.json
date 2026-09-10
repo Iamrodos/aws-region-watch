@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-09-09T21:50:08.039199",
+  "_last_updated": "2026-09-10T21:45:01.443031",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -16682,6 +16682,7 @@
     "AWS IAM Identity Center": "isAvailableIn",
     "AWS Identity and Access Management (IAM)": "isAvailableIn",
     "AWS Identity and Access Management (IAM) Access Analyzer": "isAvailableIn",
+    "AWS Interconnect": "isAvailableIn",
     "AWS IoT Core": "isAvailableIn",
     "AWS IoT Device Defender": "isAvailableIn",
     "AWS IoT Device Management": "isAvailableIn",
@@ -16791,6 +16792,7 @@
     "Amazon Aurora PostgreSQL": "isAvailableIn",
     "Amazon Bedrock": "isAvailableIn",
     "Amazon Bedrock AgentCore": "isAvailableIn",
+    "Amazon Bedrock AgentCore Registry": "isAvailableIn",
     "Amazon Bedrock AgentCore Runtime": "isAvailableIn",
     "Amazon Bedrock Agents": "isAvailableIn",
     "Amazon Bedrock Data Automation": "isAvailableIn",
@@ -17789,7 +17791,6 @@
     "Security Hub Integration for Evidence": "isAvailableIn",
     "Semantic OpenSearch": "isAvailableIn",
     "Server Manageability": "isAvailableIn",
-    "Server-Side Encryption": "isAvailableIn",
     "Server-side Encryption": "isAvailableIn",
     "Serverless instances": "isAvailableIn",
     "Service Discovery": "isAvailableIn",
