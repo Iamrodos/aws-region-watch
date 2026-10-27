@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-10-26T23:15:07.775845",
+  "_last_updated": "2026-10-27T23:03:36.772209",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -16388,7 +16388,7 @@
     "S3 Inventory": "isAvailableIn",
     "S3 Lifecycle": "isAvailableIn",
     "S3 Metadata": "isAvailableIn",
-    "S3 Mountpoint": "isBeingPlannedIn",
+    "S3 Mountpoint": "isAvailableIn",
     "S3 Multi-Region Access Points": "isAvailableIn",
     "S3 Object Lock": "isAvailableIn",
     "S3 Object Ownership": "isAvailableIn",
