@@ -1,5 +1,5 @@
 {
-  "_last_updated": "2026-11-04T00:05:46.004879",
+  "_last_updated": "2026-11-05T00:28:50.527596",
   "_schema_version": 1,
   "api": {
     "ACM PCA+CreateCertificateAuthority": "isAvailableIn",
@@ -15307,6 +15307,7 @@
     "AWS Application Integration": "isAvailableIn",
     "AWS Application Migration Service (MGN)": "isAvailableIn",
     "AWS Audit Manager": "isAvailableIn",
+    "AWS B2B Data Interchange": "isAvailableIn",
     "AWS Backup": "isAvailableIn",
     "AWS Batch": "isAvailableIn",
     "AWS CLI Integration": "isAvailableIn",
@@ -15969,6 +15970,7 @@
     "ECS Service Connect": "isAvailableIn",
     "ECS Service Discovery": "isAvailableIn",
     "ECS integration": "isAvailableIn",
+    "EDI mapping with Generative AI": "isAvailableIn",
     "EFA-only ENI": "isAvailableIn",
     "EFS Archive Storage Class": "isAvailableIn",
     "EFS OneZone Infrequent Access Storage Class": "isAvailableIn",
